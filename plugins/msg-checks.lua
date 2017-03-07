@@ -156,7 +156,7 @@ end
       if not is_mod(msg) then
 if msg.content_.caption_ then
 if lock_link == "yes" then
-		local is_link_caption = msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/")
+		local is_link_caption = msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss];//[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss];//[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss];//[Tt][Ll][Gg][Rr][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss];//[Tt].[Mm][Ee]/")
 if is_link_caption then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
